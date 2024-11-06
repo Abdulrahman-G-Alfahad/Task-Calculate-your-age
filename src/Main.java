@@ -1,11 +1,10 @@
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Scanner;
 
 public class Main {
 
     public static int calcAge(Calendar current, String dob){
-        return current.get(current.YEAR) - Integer.valueOf(dob.split("-")[0]);
+        return current.get(Calendar.YEAR) - Integer.parseInt(dob.split("-")[0]);
     }
 
     public static void main(String[] args) {
