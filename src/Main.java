@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Please enter your Date of Birth (YYYY-MM-DD):");
         String input = scanner.nextLine();
         System.out.println(calcAge(current,input));
+        scanner.close();
 
     }
 }
